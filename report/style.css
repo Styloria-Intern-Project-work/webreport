@@ -1,0 +1,582 @@
+@import 'utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    -webkit-font-smoothing:antialiased;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: visible; 
+}
+
+.navbar{
+    background-color:black;
+    width: 100%;
+    font-size: 2em;
+    border: transparent;
+}
+
+.navbar-brand img{
+    margin-top: -80px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.navbar-default .navbar-nav li a{
+    margin-left: 1rem;
+    padding-right: 7rem;
+    font-size: 60%;
+    color: #D5D5D5;
+    font-style: bold;
+}
+
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a.active{
+    color: #55eb10;
+}
+
+#home{
+    background: linear-gradient(rgba(78, 77, 76, 0.5),rgba(78, 77, 76, 0.5)), url(../img/back.jpg);
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+.landing-text h1 {
+    font-size: 400%;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+}
+
+.landing-text h3{
+    font-size: 200%;
+    font-weight: 300;
+}
+
+/* --------------------------- Menu Page start  -----------------------*/
+section.menu .container .food-wrapper{
+    display: grid;
+    grid-gap: 2rem;
+    padding: 0 --10rem;
+}
+
+section.menu .container img{
+    width: 300px;
+    height: 300px;
+    margin-left: 16%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section.menu .container .food-heading h1{
+    text-align: center;
+}
+
+section.menu .container .food-heading h3{
+    text-align: center;
+}
+
+section.menu .container .food-heading p{
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 480px)
+{
+    .landing-text h1
+    {
+        font-size: 750%;
+    }
+    .landing-text h3
+    {
+        font-size: 250%;
+    }
+    section.menu .container img
+    {
+        margin-left: 19%;
+    }
+}
+
+@media screen and (min-width: 780px)
+{
+    .landing-text h1
+    {
+        font-size: 800%;
+    }
+    .landing-text h3
+    {
+        font-size: 300%;
+    }
+    section.menu .container img
+    {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .landing-text h1
+    {
+        font-size: 850%;
+    }
+    .landing-text h3
+    {
+        font-size: 400%;
+    }
+    section.menu .container img
+    {
+        margin-left: 7%;
+    }
+}
+
+
+
+/*-----------------  Menu Page Ends ----------------*/
+
+/* ----------------  About page start ---------------- */
+
+section{
+    padding:8rem 0;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 400;
+    display: block;
+}
+
+section.about img
+{
+    width: 100%;
+}
+
+section.about h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: sans-serif;
+    line-height: 3rem;
+    font-size: 120%;    
+}
+
+/* ----------------  About page ends ---------------- */
+
+/* ---------------- Deals Page----------------  */
+
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ), url(../img/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section.big-deal .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+
+section.big-deal .timer div{
+    margin-right: 2rem;
+    background: #428c20;
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.big-deal .timer div span:first-child{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0.05rem;
+}
+
+section.big-deal .timer div span:last-child{
+    font-family: 'Lobster',sans-serif;
+    color: white;
+}
+/* ---------------- Deals Page ends----------------  */
+
+/* -------------- Blog page start -------------- */
+
+section.blog{
+    background: rgb(172, 150, 110) ;
+}
+
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+section.blog .card-content{
+    background: white;
+    
+}
+
+
+section.blog .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.blog .card-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+section.blog .card-content a{
+    color: black;
+    text-decoration: none;
+}
+
+section.blog .card-content a:hover{
+    color: #428c20;
+}
+
+section.blog .card-content h4{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+section.blog .card-content p{
+    font-family: 'Lobster', sans-serif;
+    color: gray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.blog .card-content a.read-more{
+    font-size: 0.8rem;
+}
+
+section.blog .img-wrapper img
+{
+    width: 100%;
+    margin-top: 5%;
+    height: 280px;
+}
+
+@media screen and (min-width: 480px)
+{
+    section.blog .img-wrapper img
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 780px)
+{
+    section.blog .img-wrapper img
+    {
+        width: 100%;
+    }
+}
+
+/* -------------- Blog page ends --------------*/
+
+/* -------------- Subscribe Page start -------------- */
+section.subscribe{
+    background: #D5D5D5;
+}
+section.subscribe .container > div:first-child img{
+    width: 90%;
+}
+
+section.subscribe .container div:first-child {
+    flex: 1;
+}
+
+section.subscribe .container div:last-child{
+    flex: 1;
+}
+
+section.subscribe h1{
+    font-family:"Lobster", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section.subscribe p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+section.subscribe .input-wrap{
+    background: white;
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+section.subscribe .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+section.subscribe .input-wrap input:focus{
+    outline: none;
+}
+
+section.subscribe .input-wrap button{
+    padding: 0.8rem 2rem;
+    border: none;
+    background: #428c20;
+    color: white;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    outline: none;
+}
+
+section.subscribe .input-wrap button:hover{
+    background: black;
+}
+
+/* -------------- Subscribe Page end -------------- */
+
+/* -------------- Contact Page start -------------- */
+
+section.contact-us{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section.contact-us .contact-info-wrapper{
+    padding: 4rem 0;
+    flex: 1;
+}
+
+section.contact-us .contact-info-wrapper .map{
+    margin-top: -12px;
+    height: 500px;
+    width: 1200px;
+}
+
+section.contact-us .contact-info{
+    display: flex;
+    justify-content: center;
+}
+
+section.contact-us .contact-info > div >div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+section.contact-us .contact-info > div >div img{
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+section.contact-us .contact-info > div >div >div{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact-us .contact-info > div >div >div span:first-child{
+    font-family: 'Lobster';
+    margin-bottom: 0.25rem;
+    font-size: 3rem;
+}
+
+section.contact-us .contact-info > div >div >div span:last-child{
+    font-size: 2rem;
+}
+section.contact-us .contact-info .map
+{
+    width: 200px;
+    height: auto;
+    padding: 2px
+    border: none;
+}
+
+@media screen and (min-width: 480px)
+{
+  section.contact-us .contact-info .map
+  {
+    width: 400px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px)
+{
+  section.contact-us .contact-info .map
+  {
+    width: 600px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1120px)
+{
+  section.contact-us .contact-info .map
+  {
+    width: 780px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px)
+{
+  section.contact-us .contact-info .map
+  {
+    width: 900px;
+    height: auto;
+  }
+}
+
+
+
+/* -------------- Contact Page end -------------- */
+
+/* -------------- Footer start -------------- */
+footer{
+    background: black;
+    padding: 4rem 0;
+}
+
+footer .container{
+    display: flex;
+    color: white;
+}
+
+footer .box{
+    text-align: center;
+}
+
+
+footer .instagram-api .post-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .instagram-api .post-wrapper >div{
+    margin-bottom: 10px;
+}
+footer .instagram-api .post-wrapper img
+{
+    width: 100%;
+}
+
+footer .box ul{
+    list-style-type: none;
+}
+
+footer .box ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+footer .box ul li a:hover{
+    color: #428c20;
+}
+
+footer .box h3{
+    border-bottom: 1px solid #428c20;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .box p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+footer .box ul li{
+    margin-bottom: 1rem;
+}
+
+footer .box:nth-child(3) > div {
+    display: flex;
+    justify-content: center;
+}
+
+footer .box:nth-child(3){
+    text-align: left;
+}
+
+footer .box:nth-child(3) h3{
+    text-align: center;
+}
+
+footer .box:nth-child(3) > div img{
+    margin-right: 1rem;
+}
+
+footer .box:nth-child(3) ul li{
+    margin-bottom: 1.5rem;
+}
+
+footer.copyright{
+    padding: 1rem 0;
+    background:#428c20;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer.copyright a{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 480px)
+{
+    footer .instagram-api .post-wrapper img
+    {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 780px)
+{
+    footer .instagram-api .post-wrapper img
+    {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    footer .instagram-api .post-wrapper img
+    {
+        width: 100%;
+    }
+}
+
+
